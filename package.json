@@ -41,8 +41,7 @@
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "postinstall": "npx simple-git-hooks"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-4000020240111001",
@@ -85,18 +84,10 @@
     "@vue/runtime-core": "^3.3.8",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.56.0",
-    "lint-staged": "^15.2.0",
-    "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.3",
     "unocss": "^0.58.3",
     "unplugin-auto-import": "^0.17.3",
     "vite": "^5.0.11",
     "vue-tsc": "^1.8.27"
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
-  }
 }
